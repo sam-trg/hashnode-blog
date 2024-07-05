@@ -128,10 +128,10 @@ const Post = ({ publication, post }: PostProps) => {
 				/>
 				<style dangerouslySetInnerHTML={{ __html: highlightJsMonokaiTheme }}></style>
 			</Head>
-			<h1 className="text-4xl leading-tight tracking-tight text-black dark:text-white">
+			<h1 className="text-4xl leading-tight tracking-tight text-white dark:text-white font-mono">
 				{post.title}
 			</h1>
-			<div className="text-neutral-600 dark:text-neutral-400">
+			<div className="text-white dark:text-neutral-400 font-mono">
 				<DateFormatter dateString={post.publishedAt} />
 			</div>
 			{!!coverImageSrc && (
@@ -141,7 +141,7 @@ const Post = ({ publication, post }: PostProps) => {
 			)}
 			<MarkdownToHtml contentMarkdown={post.content.markdown} />
 			{(post.tags ?? []).length > 0 && (
-				<div className="mx-auto w-full text-slate-600 dark:text-neutral-300 md:max-w-screen-md">
+				<div className="mx-auto w-full text-white dark:text-neutral-300 md:max-w-screen-md font-mono">
 					<ul className="flex flex-row flex-wrap items-center gap-2">{tagsList}</ul>
 				</div>
 			)}
