@@ -60,7 +60,7 @@ export const PersonalHeader = () => {
 	);
 
 	return (
-		<header className="grid grid-cols-2 items-center gap-5 bg-stone-100 ">
+		<header className="grid grid-cols-2 items-center gap-5 bg-stone-700 text-white ">
 			<div className="col-span-full md:col-span-1">
 				<h1>
 					<Link
