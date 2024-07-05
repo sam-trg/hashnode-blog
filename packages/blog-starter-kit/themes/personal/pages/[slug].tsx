@@ -128,10 +128,10 @@ const Post = ({ publication, post }: PostProps) => {
 				/>
 				<style dangerouslySetInnerHTML={{ __html: highlightJsMonokaiTheme }}></style>
 			</Head>
-			<h1 className="text-4xl leading-tight tracking-tight text-white dark:text-white font-mono">
+			<h1 className="text-4xl leading-tight tracking-tight text-sky-950 dark:text-white">
 				{post.title}
 			</h1>
-			<div className="text-white dark:text-neutral-400 font-mono">
+			<div className="text-sky-950 dark:text-neutral-400">
 				<DateFormatter dateString={post.publishedAt} />
 			</div>
 			{!!coverImageSrc && (
