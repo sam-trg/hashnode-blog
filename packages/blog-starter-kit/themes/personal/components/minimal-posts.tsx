@@ -7,8 +7,8 @@ type Props = {
 };
 
 export const MinimalPosts = ({ posts }: Props) => {
-	return (
-		<section className="flex w-full flex-col items-stretch gap-10 font-mono text-white lg:max-w-lg">
+	return (// this is post details element on home page (title and date)
+		<section className="flex w-full flex-col items-stretch gap-10 font-mono text-white lg:max-w-lg"> 
 			{posts.map((post) => (
 				<MinimalPostPreview
 					key={post.id}

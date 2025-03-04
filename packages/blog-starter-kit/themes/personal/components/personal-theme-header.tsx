@@ -63,8 +63,8 @@ export const PersonalHeader = () => {
 		<header className="grid grid-cols-2 items-center gap-5 bg-blue-300 text-white ">
 			<div className="col-span-full md:col-span-1">
 				<h1>
-					<Link
-						className="flex flex-row items-center gap-2 font-mono text-lg font-bold leading-tight tracking-tight text-black dark:text-white"
+					<Link //header, used to have a font-bold
+						className="flex flex-row items-center gap-2 font-mono text-lg leading-tight tracking-tight text-black dark:text-white"
 						href="/"
 						aria-label={`${publication.author.name}'s blog home page`}
 					>
