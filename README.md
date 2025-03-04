@@ -143,7 +143,7 @@ Congrats 🎉! Hashnode will now treat your blog as a headless blog and send rea
 
 ## Running Locally
 
-- cd into either `packages/blog-starter-kit/themes/enterprise`, or `packages/blog-starter-kit/themes/hashnode` or `packages/blog-starter-kit/themes/personal`
+- cd into `packages/blog-starter-kit/themes/personal`
 - Copy `.env.example` to `.env.local`
 - `pnpm install`
 - `pnpm dev`
@@ -162,19 +162,3 @@ If you prefer to build your frontend from scratch, you can use our public GraphQ
 [![Headless Hashnode Demo — With Blog Starter Kit (Deployed to Vercel)](https://cdn.hashnode.com/res/hashnode/image/upload/v1697541065189/5ct0eFWIu.png?auto=format&w=500)](https://youtu.be/5Yuxoqohvrk)
 
 [![Customizing Hashnode Blog Starter Kit using TailwindCSS — Headless Hashnode Demo](https://cdn.hashnode.com/res/hashnode/image/upload/v1697540919799/MWVa0aD78.png?auto=format&w=500)](https://youtu.be/oH8QG8E0Txk)
-
-## Found an issue?
-
-If you have found an issue or bug, please create an [issue](https://github.com/Hashnode/starter-kit/issues).
-
-If it's a quick fix, such as a misspelled word or a broken link, feel free to skip creating an issue. You can create a [pull request](https://github.com/Hashnode/starter-kit/pulls) directly.
-
-## Have feedback for us?
-
-Feel free to create an [issue](https://github.com/Hashnode/starter-kit/issues) with the **feedback** label. Our team will take a look and get back to you as soon as we can!
-
-## Reach out for help
-
-You can discuss ideas, ask questions, and meet other members from the Hashnode community in our [Discord](https://discord.gg/hashnode). You can also create tickets on [our intercom](https://hashnode.com/#support) to find support.
-
-If you like, you can also DM us on [X](https://x.com/hashnode)!
