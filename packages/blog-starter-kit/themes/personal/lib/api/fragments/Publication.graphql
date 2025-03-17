@@ -1,14 +1,63 @@
 fragment Publication on Publication {
 	id
+	imprint
 	title
 	displayTitle
 	url
+	urlPattern
 	metaTags
 	favicon
 	isTeam
+	headerColor
 	followersCount
 	descriptionSEO
+	features {
+		customCSS {
+			published {
+				home
+				post
+				static
+			}
+		}
+	}
+	about {
+		html
+	}
+	features {
+		newsletter {
+			isEnabled
+		}
+		viewCount {
+			isEnabled
+		}
+		readTime {
+			isEnabled
+		}
+		audioBlog {
+			isEnabled
+			voiceType
+		}
+		textSelectionSharer {
+			isEnabled
+		}
+		customCSS {
+			isEnabled
+			published {
+				__typename
+				homeMinified
+				postMinified
+				staticMinified
+			}
+			draft {
+				__typename
+				homeMinified
+				postMinified
+				staticMinified
+			}
+		}
+	}
 	author {
+		id
 		name
 		username
 		profilePicture
@@ -18,22 +67,43 @@ fragment Publication on Publication {
 		image
 	}
 	preferences {
+		layout
 		logo
+		disableFooterBranding
+		enabledPages {
+			newsletter
+			members
+		}
 		darkMode {
+			enabled
 			logo
 		}
 		navbarItems {
+			__typename
 			id
-			type
 			label
 			url
+			priority
+			type
+			series {
+				__typename
+				id
+			}
+			page {
+				__typename
+				id
+			}
 		}
 	}
 	links {
 		twitter
+		instagram
 		github
-		linkedin
+		website
 		hashnode
+		youtube
+		linkedin
+		mastodon
 	}
 	integrations {
 		umamiWebsiteUUID
@@ -43,8 +113,11 @@ fragment Publication on Publication {
 		matomoURL
 		matomoSiteID
 		fathomSiteID
+		gTagManagerID
 		fathomCustomDomain
 		fathomCustomDomainEnabled
 		plausibleAnalyticsEnabled
+		koalaPublicKey
+		msClarityID
 	}
 }
